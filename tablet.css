@@ -1,0 +1,88 @@
+    .top-bar-background {
+      height: 540px;
+    }
+    .top-bar-background-b {
+      height: 540px;
+    }
+    #clients-background {
+      height: 510px;
+    }
+    #clients-background-b {
+      height: 510px;
+    }
+    
+    .top-bar ul li a{
+        font-size: 17px;
+        margin: 0px 7px;
+    }
+    #main-logo{
+      margin-top: 15px;
+    }
+    .top-intro h3 {
+        font-size: 29px;
+        margin-top: 230px;
+    }
+    .top-intro p{
+        font-size: 18px;
+        margin: 0 56px; ;
+    }
+    #mid-box-heading{
+        font-size: 30px;
+    }
+    #clients h3,#contact h3{
+        font-size: 25px;
+    }
+
+
+
+    nav ul li a{
+     transition: padding 200ms;
+    }
+    nav ul li a:hover{
+      color: rgb(189, 192, 178);
+      border: none;
+      padding: 1px 5px;
+    }
+    .top-bar{
+      display: none;
+    }
+    .phone-bar{
+      display: block;
+      background-color: rgba(0, 0, 0,0.8);
+      position: fixed;
+      top: 0;
+      width: 100%;
+   
+    }
+    .phone-bar p{
+      width: 22px;
+      height: 2px;
+      margin: 4px;
+      border-radius: 5px;
+      background-color: white;
+      display: block;
+    }
+    #top{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #top img{
+      /* align-self: center; */
+      margin: auto;
+      padding: 15px;
+    }
+    #lines{
+      cursor: pointer;
+      position: absolute;
+      left: 0;
+      padding: 2px;
+      margin: 13px;
+      margin-left: 38px;
+      border: 1px solid white;
+      border-radius: 4px;
+    }
+    #side{
+      margin: 25px;
+      display: none;
+    }

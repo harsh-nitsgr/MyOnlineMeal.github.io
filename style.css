@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  color: black;
+  font-family: "Cabin", sans-serif;
+}
+.phone-bar{
+  display: none;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.top-bar ul {
+  display: flex;
+  margin-bottom: 15px;
+}
+.top-bar {
+  background-color: rgba(13, 6, 5, 0.855);
+  color: white;
+  display: flex;
+  align-items: center;
+  margin: 20px 50px;
+  border-radius: 10px;
+}
+#main-logo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 6px 25px;
+}
+.top-bar-li {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.top-bar-li a {
+  color: white;
+  text-decoration: none;
+  margin: 2px;
+  font-size: 17px;
+  padding: 4px 8px;
+  margin: 0 7px;
+  border-radius: 5px;
+  /* transition: color 400ms; */
+}
+nav ul li a:hover{
+  /* color: rgb(214, 255, 197); */
+  border: 2px solid white;
+  background-color: rgba(0,0,0,0);
+  border-radius: 5px;
+  padding: 2px 6px;
+}
+.top-bar-background {
+  position: absolute;
+  background: url("./foodbg1.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+  height: 500px;
+  width: 100vw;
+  z-index: -1;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+}
+.top-bar-background-b {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 500px;
+  width: 100vw;
+  z-index: -2;
+  top: 0;
+  left: 0;
+}
+.top-bar {
+  position: sticky;
+  top: 20px;
+}
+
+.top-intro h3 {
+  color: white;
+  font-size: 34px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 120px 20px 25px 20px;
+}
+.top-intro p {
+  color: white;
+  text-align: center;
+  margin: 0px 227px;
+  font-size: 20px;
+}
+
+#btn {
+  color: white;
+  display: block;
+  margin: 26px auto;
+  font-size: 15px;
+  background-color: rgba(15, 87, 15, 0);
+  border: 2px solid white;
+  padding: 5px 7px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/*services section*/
+
+#mid-box-heading {
+  text-align: center;
+  /* border: 2px solid red; */
+  /* margin: 20px 0px; */
+  font-size: 33px;
+}
+.head-container {
+  margin-top: 150px;
+}
+.container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* border: 2px solid red; */
+  margin: 0px 9px;
+  /* height: 407px; */
+}
+
+.mid-box h4 {
+  margin: 0px 22px 20px 22px;
+  font-size: 21px;
+  text-align: center;
+}
+.mid-box p {
+  font-size: 18px;
+  margin: 0px 22px 40px 22px;
+  text-align: center;
+}
+.mid-box {
+  border: 2.5px solid rgb(0, 0, 0);
+  margin: 40px 50px;
+  border-radius: 20px;
+  background-color: rgb(112, 112, 115);
+}
+.mid-box img {
+  width: 146px;
+  margin: auto;
+  display: block;
+}
+#box1 img {
+  margin: 30px auto 15px auto;
+}
+#box2 img {
+  margin: 64px auto;
+}
+#box3 img {
+  width: 120px;
+  margin: 34px auto;
+}
+/* clients section */
+
+#clients img {
+  height: 80px;
+  margin: 18px;
+}
+#clients h3 {
+  color: white;
+  text-align: center;
+  margin: -3px;
+  padding: 30px;
+  font-size: 32px;
+}
+#clients-background {
+  position: absolute;
+  background: url("keybackground.jpg") no-repeat center center/cover;
+  /* background-attachment: fixed; */
+  height: 400px;
+  width: 100%;
+  opacity: 0.15;
+  z-index: -1;
+}
+#clients-background-b {
+  position: absolute;
+  background-color: black;
+  height: 400px;
+  width: 100%;
+  z-index: -2;
+}
+.clients-logos {
+  margin: -3px 164px;
+}
+@media only screen and (max-width: 1111px) {
+  .clients-logos {
+    margin: -3px 100px;
+  }
+}
+@media only screen and (max-width: 1111px) {
+  .mid-box {
+    margin: 40px 25px;
+  }
+}
+@media only screen and (max-width: 936px) {
+  .clients-logos {
+    margin: -3px 40px;
+}
+  #clients img {
+    height: 70px;
+    margin: 10px;
+  }
+  .clients-logos {
+    margin-top: 42px;
+  }
+  #contact h3 {
+    padding-top: 44px;
+  }
+}
+@media only screen and (max-width: 880px) {
+  .top-intro p {
+    margin: 0px 150px;
+  }
+  .container {
+    flex-wrap: wrap;
+  }
+  .mid-box {
+    margin: 30px 50px;
+  }
+}
+@media only screen and (max-width: 743px) {
+  .top-bar-background {
+    height: 550px;
+  }
+  .top-bar-background-b {
+    height: 550px;
+  }
+  #clients-background {
+    height: 450px;
+  }
+  #clients-background-b {
+    height: 450px;
+  }
+}
+
+
+
+
+/*contact section*/
+#contact input,
+#contact textarea {
+  width: 100%;
+  padding: 5px;
+  border: 1.9px solid black;
+  border-radius: 7px;
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+#contact-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#contact-box form {
+  width: 40%;
+}
+#contact h3 {
+  text-align: center;
+  margin-top: 100px;
+  font-size: 32px;
+}
+footer {
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  padding: 8px;
+  margin-top: 20px;
+}

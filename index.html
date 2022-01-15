@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyOnlineMeal</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="only screen and (max-width: 616px) " href="tablet.css">
+    <link rel="stylesheet" media="only screen and (max-width: 502px)" href="phone.css">
+  </head>
+  
+
+  <body>
+    <p class="top-bar-background" id="home"></p>
+    <p class="top-bar-background-b"></p>
+    <nav class="phone-bar">
+      <div id="top">
+        <div id="lines" onclick="hide()">
+        <p></p>
+        <p></p>
+        <p></p>
+        </div>
+        <img id="main-logo" src="MyOnlineMeal Logo1.jpg" alt="Logo" />
+      </div>
+      <div id="side">
+        <ul class="top-bar-ul">
+          <li class="top-bar-li">
+            <a href="#home">Home</a>
+          </li>
+          <li class="top-bar-li"><a href="#mid-box-heading">Services</a></li>
+          <li class="top-bar-li"><a href="#clients-background">Our Clients</a></li>
+          <li class="top-bar-li"><a href="#contact">Contact Us</a></li>
+        </ul>
+
+      </div>
+    </nav>
+    <nav class="top-bar">
+      <img id="main-logo" src="MyOnlineMeal Logo1.jpg" alt="Logo" />
+      <ul class="top-bar-ul">
+        <li class="top-bar-li">
+          <a href="#home">Home</a>
+        </li>
+        <li class="top-bar-li"><a href="#mid-box-heading">Services</a></li>
+        <li class="top-bar-li"><a href="#clients-background">Our Clients</a></li>
+        <li class="top-bar-li"><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="top-intro">
+      <h3>Welcome to MyOnlineMeal</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod voluptatum
+        placeat est labore et? Porro corrupti tempore earum quas facilis, ab
+        illum sed sunt eligendi dolorum iusto similique, vel voluptate!
+      </p>
+      <button id="btn">Order Now</button>
+    </div>
+
+
+    
+    <section class="head-container">
+      <p class="services-background"></p>
+      <p class="services-background-b"></p>
+
+      <h3 id="mid-box-heading">Our Services</h3>
+      
+      <div class="container">
+        <div class="mid-box" id="box1">
+          <img src="logo1.png" alt="" />
+          <h4>Food Catering</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            totam molestiae illum. Molestias ex illo maxime nemo pariatur sed,
+            iste quidem eveniet error est perspiciatis? Aut cum obcaecati eos
+            quas!
+          </p>
+        </div>
+
+        <div class="mid-box" id="box2">
+          <img src="logo2.png" alt="" />
+          <h4>Bulk ordering</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi aut
+            saepe sint, vero non nihil ab excepturi rerum eligendi voluptate
+            eius fugiat quam odio iste quas iure! Soluta, quae necessitatibus.
+          </p>
+        </div>
+
+        <div class="mid-box" id="box3">
+          <img src="logo3.png" alt="" />
+          <h4>Fast Delivery</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            optio sequi error modi quam et accusantium corrupti qui officia. Aut
+            eos ullam nobis soluta iste sunt aspernatur vel modi provident.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="clients">
+      <p id="clients-background"></p>
+      <p id="clients-background-b"></p>
+      <h3>Our Clients</h3>
+      <div class="clients-logos">
+        <img id="logo1" src="./egg_logo.png" alt="" />
+        <img id="logo2" src="./Swiggy-logo.png" alt="" />
+        <img id="logo3" src="./Zomato_logo.png" alt="" />
+        <img id="logo4" src="./png-apple-logo-9718.png" alt="" />
+        <img id="logo5" src="./company-bigbasket.png" alt="" />
+        <img id="logo1" src="./egg_logo.png" alt="" />
+        <img id="logo2" src="./Swiggy-logo.png" alt="" />
+        <img id="logo3" src="./Zomato_logo.png" alt="" />
+        <img id="logo4" src="./png-apple-logo-9718.png" alt="" />
+        <img id="logo5" src="./company-bigbasket.png" alt="" />
+      </div>
+    </section>
+
+
+    <section id="contact">
+    <h3>Contact Us</h3>
+    <div id="contact-box">
+      <form action="backend.php">
+        <div id="name">Name:<input type="text" id="name" name="Name"></div> 
+        <div id="email"> Email:<input type="email" id="email" name="Email"></div>
+        <div id="mobile"> Mobile:<input type="phone" id="mobile" name="Mobile Number"></div>
+        <div id="query"> Describe your query:<textarea name="myText" cols="30" rows="5"></textarea></div>
+        <div id="submit">
+          <input type="submit" value="Submit Now">
+        </div>
+      </div>
+
+
+      </form>
+    </div>
+    </section>
+    <footer>
+      All rights reserved by MyOnlineMeal.com&copy;
+    </footer>
+    <script>
+      let lines = document.querySelector('#lines');
+  
+      function hide(){
+        console.log("Inside function")
+      if(document.querySelector('#side').style.display == "none"){
+        document.querySelector('#side').style.display = "block";
+      }
+      else{
+        document.querySelector('#side').style.display = "none";
+      }
+      }
+      var element = document.querySelector('p').style;
+      console.log(element);
+    </script>
+  
+  </body>
+</html>
